@@ -1,0 +1,150 @@
+.header {
+    padding: 10px 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__link {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    color: #150C01;
+    transition: all 0.3s ease;
+    position: relative;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: black;
+        transition: width 0.3s ease;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+.header__btn {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 14px 30px;
+    background-color: #DC780B;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    border: 2px solid #DC780B;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #fff;
+        color: #DC780B;
+    }
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__menu {
+    border: 2px solid #DC780B;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+    display: none;
+}
+
+@media screen and (max-width: 765px) {
+    .nav__list {
+        gap: 30px;
+    }
+
+    .nav__link {
+        font-size: 15px;
+    }
+
+    .header__btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .header__logo {
+        width: 40px;
+    }
+
+    .header__info {
+        gap: 20px;
+    }
+
+    .nav__list {
+        gap: 20px;
+    }
+
+    .nav__link {
+        font-size: 13px;
+    }
+
+    .header__btn {
+        padding: 9px 15px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .nav__list {
+        display: none;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .nav__active {
+        display: block;
+        position: absolute;
+        background-color: #fff;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        top: 50px;
+        text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        z-index: 10;
+
+        li {
+            margin: 10px;
+        }
+    }
+
+    .header__btn {
+        font-size: 12px;
+        padding: 7px 13px;
+    }
+}

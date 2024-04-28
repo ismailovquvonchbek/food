@@ -1,0 +1,194 @@
+.hero {
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.hero__info {
+    max-width: 555px;
+    width: 100%;
+}
+
+.hero__heading {
+    font-family: "Philosopher";
+    font-size: 48.83px;
+    font-weight: 700;
+    color: #150C01;
+}
+
+.hero__text {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    color: #150C01;
+    opacity: 70%;
+    margin-top: 42px;
+}
+
+.hero__buttonGroup {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.hero__btn1 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;  
+    padding: 20px 40px;
+    color: #FFFFFF; 
+    border-radius: 5px;
+    background-color: #DC780B; 
+    border: 2px solid #DC780B;
+}
+
+.hero__btn2 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;  
+    padding: 20px 40px;
+    color: #DC780B; 
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    border: 2px solid #DC780B;
+}
+
+@media screen and (max-width: 1110px) {
+    .hero__info {
+        width: 500px;
+    }
+
+    .hero__heading {
+        font-size: 40px;
+    }
+
+    .hero__text {
+        font-size: 14px;
+    }
+
+    .hero__btn1, .hero__btn2 {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    .hero .container {
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .hero__info {
+        order: 10;
+    }
+
+    .hero__heading {
+        font-size: 45px;
+    }
+    
+    .hero__text {
+        font-size: 17px;
+    }
+
+    .hero__buttonGroup {
+        margin-left: 120px;
+    }
+
+    .hero__img {
+        margin-top: 10px;
+        order: -10;
+    }
+}
+
+@media screen and (max-width: 665px) {
+
+    .hero__info {
+        width: 500px;
+    }
+
+    .hero__heading {
+        font-size: 40px;
+
+    }
+
+    .hero__text {
+        font-size: 15px;
+    }
+
+    .hero__img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .hero__info {
+        width: 400px;
+    }
+
+    .hero__heading {
+        font-size: 32px;
+    }
+
+    .hero__text {
+        font-size: 14px;
+    }
+
+    .hero__buttonGroup {
+        margin-left: 70px;
+    }
+
+    .hero__img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .hero {
+        margin-top: -20px;
+    }
+
+    .hero__info {
+        width: 330px;
+    }
+    .hero__heading {
+        font-size: 27px;
+    }
+
+    .hero__text {
+        font-size: 13px;
+        margin-top: 25px;
+    }
+
+    .hero__buttonGroup {
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .hero__info {
+        width: 300px;
+    }
+
+    .hero__heading {
+        font-size: 24px;
+    }
+
+    .hero__text {
+        font-size: 12px;
+    }
+
+    .hero__buttonGroup {
+        margin-left: 30px;
+
+        button {
+            padding: 10px 20px;
+            font-size: 12px;
+        }
+    }
+}
